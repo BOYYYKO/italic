@@ -179,7 +179,7 @@ header {
 .nav-list {
   list-style: none;
   margin-left: -30px;
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .nav-list-item {
@@ -312,25 +312,39 @@ header {
 
 /* PROPOSAL START */
 
-.proposal{
+.proposal {
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
 }
 
-.proposal-content{
+.proposal-content {
   max-width: 1040px;
   align-self: center;
 }
 
-.proposal-item-one{
+.proposal-item-one {
   margin-right: 10px;
 }
-.proposal-item-two{
+
+.proposal-item-two {
   margin-left: 10px;
 }
-.proposal-item > h3 {
+
+.proposal-item>img {
+  overflow: hidden;
+}
+
+.proposal-item>img {
+  transition: transform 0.25s;
+}
+
+.proposal-item:hover img {
+  transform: scale(1.05);
+}
+
+.proposal-item>h3 {
   font-family: 'EB Garamond';
   font-style: normal;
   font-weight: 400;
@@ -341,7 +355,7 @@ header {
   margin: 0;
 }
 
-.proposal-item > p {
+.proposal-item>p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -352,7 +366,143 @@ header {
   margin: 0;
   width: 484px;
 }
+
 /* PROPOSAL END */
+
+/* ARRIVALS START */
+.arrivals{
+  display: flex;
+  justify-content:center;
+}
+.arrivals-content{
+  height: 451px;
+  max-width: 1040px;
+}
+.arrivals-item {
+  border: 1px solid #E0DBD2;
+  background-color: #FFFFFF;
+  width: 287px;
+  margin: 0px 3px;
+}
+
+.center{
+  align-self: center;
+}
+.arrivals-content > .none {
+  border: none;
+  width: auto;
+  background-color: FEFDFC;
+  margin: 0;
+}
+.none{
+  padding-right: 115px;
+}
+.none > h2{
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 160%;
+  letter-spacing: 2.4px;  
+  color: #000000;
+  margin: 0;
+}
+
+.none > p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 171%;
+  color: #000000;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.arrivals-btn{
+  width: 153px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 108%;
+  text-align: center;
+  color: #000000;
+  padding: 12px 0px;
+  border: 1px solid #000000;
+  margin-top: 20px;
+}
+
+.arrivals-item>.title {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.4px;
+  color: #383230;
+  margin: 0;
+}
+
+.arrivals-item>.manufacturer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #8C8C8C;
+  margin-top: 6px;
+}
+
+.arrivals-item>.seller {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #383230;
+}
+
+.arrivals-item>.price {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 109%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 14px;
+}
+
+.arrivals-item>.price>.colors {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 109%;
+  text-transform: uppercase;
+  color: #8C8C8C;
+  margin-left: 9px;
+}
+
+.arrivals-item>p {
+  margin-left: 15px;
+}
+
+.none > p {
+  margin-left: 0;
+}
+
+.arrivals-item>.title {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.arrivals-item>.price{
+  margin-bottom: 15px;
+}
+
+/* ARRIVALS END */
 
 /* ADAPTIVE START */
 @media (max-width: 1200px) {
@@ -360,8 +510,13 @@ header {
     margin: 0px 6px;
   }
 
-  .proposal-item > img, .proposal-item > p {
+  .proposal-item>img,
+  .proposal-item>p {
     width: 400px;
+  }
+
+  .none{
+    padding-right: 15px;
   }
 }
 
@@ -375,8 +530,24 @@ header {
     display: none;
   }
 
-  .proposal-item > img, .proposal-item > p {
+  .proposal-item>img,
+  .proposal-item>p {
     width: 350px;
+  }
+
+  .none{
+    padding-right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .arrivals-btn-parent{
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrivals-content{
+    display: block;
   }
 }
 
@@ -404,13 +575,18 @@ header {
     display: inline;
   }
 
-  .proposal-item{
+  .proposal-item {
     padding-top: 60px;
     margin: 0;
   }
 
-  .proposal-item > img, .proposal-item > p {
+  .proposal-item>img,
+  .proposal-item>p {
     width: 500px;
+  }
+
+  .arrivals-item > img, .arrivals-item {
+    width: 280px;
   }
 }
 
@@ -466,8 +642,27 @@ header {
     height: 120px;
   }
 
-  .proposal-item > img, .proposal-item > p {
+  .proposal-item>img,
+  .proposal-item>p {
     width: 280px;
+  }
+
+  .arrivals{
+    margin-top: 30px;
+  }
+
+  .arrivals-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrivals-item{
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 0;
+
   }
 }
 
