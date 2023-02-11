@@ -8,7 +8,6 @@ body {
 
 .container {
   margin: 0px 80px;
-  max-width: 1200px;
 }
 
 header {
@@ -61,7 +60,6 @@ header {
 .header-section {
   display: flex;
   height: 61px;
-  width: 100%;
   align-self: center;
   margin: 0px 16px;
 }
@@ -95,6 +93,8 @@ header {
 .header-section>ul>li:hover {
   transform: scale(1.2);
 }
+
+.menu {}
 
 .menu-icon {
   display: none;
@@ -254,7 +254,7 @@ header {
 /* LABEL END */
 
 
-.main-photo-content{
+.main-photo-content {
   width: 100%;
   height: auto;
 }
@@ -269,8 +269,8 @@ header {
   background-color: #FEFDFC;
 }
 
-.content-two >p> a{
-  align-self:center;
+.content-two>p>a {
+  align-self: center;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -279,15 +279,36 @@ header {
   color: #000000;
 }
 
-.content-two{
+.content-two {
   transition: position 2s;
 }
-.content-two >.anim:hover {
+
+.content-two>.anim:hover {
   transform: scale(1.1);
 }
 
-
 /* LABEL 2 END */
+
+/* BRANDS START */
+.brands {
+  height: 80px;
+  background-color: #F9F7F4;
+  display: flex;
+  justify-content: center;
+}
+
+.brands-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+.brands-content>img {
+  margin: 0px 23px;
+}
+
+/* BRANDS END */
 
 
 /* ADAPTIVE START */
@@ -318,14 +339,24 @@ header {
     font-size: 24px;
     height: 176px;
   }
-  .content-two >p> a{
+
+  .content-two>p>a {
     font-size: 12px;
+  }
+
+  .brands-content>img {
+    margin: 0px 9px;
+    height: 16px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
     margin: 0px 20px;
+  }
+
+  .header-section {
+    width: 100%;
   }
 
   .right-menu {
@@ -355,8 +386,20 @@ header {
     height: 136px;
   }
 
-  .content-two >p> a{
+  .content-two>p>a {
     font-size: 8px;
+  }
+
+  .brands-content {
+    flex-wrap: wrap;
+  }
+
+  .brands-content>img {
+    margin: 7px 9px;
+  }
+
+  .brands {
+    height: 120px;
   }
 }
 
