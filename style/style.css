@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=IBM+Plex+Mono&family=Inter&display=swap');
+
+body {
+  background-color: #FEFDFC;
+  margin: 0;
+  min-width: 320px;
+}
+
+.container {
+  margin: 0px 80px;
+  max-width: 1200px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HEADER START */
+/* PROMO START */
+.promo {
+  background-color: #383230;
+}
+
+.promo-content {
+  height: 30px;
+}
+
+.promo-section {
+  align-self: center;
+}
+
+.promo-section>p {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px 16px;
+}
+
+/* PROMO END */
+
+.header-section {
+  display: flex;
+  height: 61px;
+  width: 100%;
+  align-self: center;
+  margin: 0px 16px;
+}
+
+.header-section > div{
+  align-self:center;
+}
+
+.logo{
+  justify-content: center;
+}
+
+.header-section > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header-section > ul > li{
+  justify-content: center;
+  align-self:center;
+  display: inline;
+  margin: 0px 10px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #383230;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.right-menu{
+  justify-content: end;
+}
+/* HEADER END */
+
+@media (max-width: 1200px) {
+  .header-section > ul > li{
+    margin: 0px 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-icon{
+    display: inline;
+    margin-right: 8px;
+  }
+  .menu{display: none;}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .container{
+    margin: 0;
+  }
+  .right-menu{
+    display: none;
+  }
+  .logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
