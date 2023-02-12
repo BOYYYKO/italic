@@ -383,8 +383,12 @@ header {
 .arrivals-item {
   border: 1px solid #E0DBD2;
   background-color: #FFFFFF;
-  width: 287px;
+  width: 200px;
   margin: 0px 3px;
+}
+
+.arrivals-content > .arrivals-cards > .arrivals-item {
+  width: 287px;
 }
 
 .center {
@@ -643,16 +647,9 @@ header {
 .tovars-container>.tovars-row>.arrivals-item>.quick-view-btn {
   width: 198px;
 }
-
 /* HIIT END */
 
 /* EXPLORE START */
-/* <section class="explore">
-<div class="explore-content container">
-    <div class="title-container">Explore even more.</div>
-    <div class="categories flex-between">
-        <div class="item"> */
-
 .explore {
   display: flex;
   justify-content: center;
@@ -698,10 +695,14 @@ header {
 .series{
   margin-top: 40px;
   background-color: #F9F7F4;
+  display: flex;
+  justify-content: center;
 }
 
 .series-content{
   padding: 80px 0px;
+  max-width: 1040px;
+  width: 100%;
 }
 
 .series-content > .text-container > .theme {
@@ -733,6 +734,71 @@ header {
 }
 
 /* SERIES END */
+
+/* TRENDINGS START */
+.explore-two{
+  margin-top: 78px;
+  margin-bottom: 80px;
+}
+
+.quick-view-btn-two{
+  width: 170px;
+}
+.arrivals-item-two{
+  width: 200px;
+}
+
+.new-2 {
+  position: absolute;
+  margin: 11px;
+  background-color: #817A70;
+  padding: 3px 5px;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 109%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/* TRENDINGS END */
+
+/* SLIDER START */
+.slide-container {
+  max-width: 1120px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0;
+}
+
+.slide-content {
+  margin: 0;
+  overflow: hidden;
+}
+
+.card-wrapper{
+  display: flex;
+}
+
+.card > .arrivals-item {
+  width: 200px;
+  height: 347px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* SLIDER END */
 
 /* ADAPTIVE START */
 @media (max-width: 1200px) {
