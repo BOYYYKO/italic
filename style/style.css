@@ -935,7 +935,7 @@ header {
   }
 
   .tovars-row {
-    display: inline;
+    display: grid;
   }
 
   .tovars-container>.tovars-row>.arrivals-item>img {
