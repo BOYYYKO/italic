@@ -694,6 +694,45 @@ header {
 }
 /* EXPLORE END */
 
+/* SERIES START */
+.series{
+  margin-top: 40px;
+  background-color: #F9F7F4;
+}
+
+.series-content{
+  padding: 80px 0px;
+}
+
+.series-content > .text-container > .theme {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #817A70;
+  margin-top: 60px;
+}
+
+.series-content > .text-container > .text {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  width: 380px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 141%;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.series-content > .text-container > .arrivals-btn-parent > .arrivals-btn {
+  background: #383230;
+  color: #FFFFFF;
+  width: 100px;
+}
+
+/* SERIES END */
 
 /* ADAPTIVE START */
 @media (max-width: 1200px) {
@@ -811,6 +850,26 @@ header {
   .hiit-content {
     justify-content: center;
   }
+  
+  .series-content > .image-container > img{
+    width: 290px;
+  }
+
+  .series-content > .text-container > .theme{
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .series-content > .text-container > .arrivals-btn-parent {
+    justify-content: start;
+  }
+  .series-content > .text-container > .text{
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .series-content > .text-container > .text {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -877,7 +936,6 @@ header {
   .hiit-content>.btn-content {
     display: flex;
     justify-content: center;
-
   }
 
   .hiit-content>.btn-content>.arrivals-btn {
@@ -925,6 +983,30 @@ header {
 
   .explore-content > .title-container {
     text-align: center;
+  }
+
+  .series-content {
+    padding: 20px 0px;
+    display:flex;
+    flex-direction:column-reverse;
+  }
+
+  .series-content > .text-container{
+    text-align: center;
+  }
+
+  .series-content > .text-container> .text{
+  width: 100%;
+  }
+
+  .series-content > .text-container > .arrivals-btn-parent {
+    justify-content: center;
+  }
+
+  .series-content > .image-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1052,6 +1134,14 @@ header {
 
   .explore {
     margin-top: 50px;
+  }
+
+  .series-content > .text-container> .theme{
+    margin-top: 20px;
+  }
+
+  .series-content > .text-container> .text{
+    font-size: 14px;
   }
 }
 
