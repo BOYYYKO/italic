@@ -811,6 +811,10 @@ header {
   .tovars-row {
     justify-content: center;
   }
+  
+  .hiit-content> .btn-content>.arrivals-btn {
+    margin-top: 10px;
+  }
 
   .hiit-content>.img-container>img {
     width: 468px;
@@ -860,7 +864,7 @@ header {
   .promo-content{
     justify-content: center;
   }
-  
+
   .header-section {
     width: 100%;
   }
