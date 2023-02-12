@@ -388,7 +388,7 @@ header {
 }
 
 .arrivals-content > .arrivals-cards > .arrivals-item {
-  width: 287px;
+  width: 280px;
 }
 
 .center {
@@ -1281,6 +1281,10 @@ header {
 
   .series-content > .text-container> .text{
     font-size: 14px;
+  }
+
+  .main-photo-2{
+    padding-top: 40px;
   }
 }
 
