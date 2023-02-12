@@ -678,6 +678,10 @@ header {
   margin-top: 20px;
 }
 
+.item{
+  margin: 3px;
+}
+
 .categories>.item>p {
   font-family: 'Inter';
   font-style: normal;
@@ -689,11 +693,6 @@ header {
   margin-top: 7px;
 }
 /* EXPLORE END */
-
-
-/* PROPOSAL TWO START */
-
-/* PROPOSAL TWO END */
 
 
 /* ADAPTIVE START */
@@ -727,6 +726,15 @@ header {
 
   .tovars-container>.tovars-row>.arrivals-item>.quick-view-btn {
     width: 148px;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .item {
+    padding-top: 20px;
   }
 }
 
@@ -802,16 +810,6 @@ header {
 
   .hiit-content {
     justify-content: center;
-  }
-
-  .categories {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .item {
-    padding-top: 20px;
-    margin: 5px;
   }
 }
 
