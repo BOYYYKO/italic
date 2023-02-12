@@ -857,6 +857,10 @@ header {
     margin: 0px 20px;
   }
 
+  .promo-content{
+    justify-content: center;
+  }
+  
   .header-section {
     width: 100%;
   }
