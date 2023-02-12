@@ -646,6 +646,51 @@ header {
 
 /* HIIT END */
 
+/* EXPLORE START */
+/* <section class="explore">
+<div class="explore-content container">
+    <div class="title-container">Explore even more.</div>
+    <div class="categories flex-between">
+        <div class="item"> */
+
+.explore {
+  display: flex;
+  justify-content: center;
+}
+
+.explore-content {
+  max-width: 1040px;
+  width: 100%;
+}
+
+.explore-content>.title-container {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 137%;
+  letter-spacing: 0.8px;
+  color: #383230;
+  margin: 0;
+}
+
+.categories {
+  margin-top: 20px;
+}
+
+.categories>.item>p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #000000;
+  margin: 0;
+  margin-top: 7px;
+}
+
+/* EXPLORE END */
+
 /* ADAPTIVE START */
 @media (max-width: 1200px) {
   .header-section>ul>li {
@@ -753,6 +798,16 @@ header {
   .hiit-content {
     justify-content: center;
   }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .item {
+    padding-top: 20px;
+    margin: 5px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -811,8 +866,18 @@ header {
   .tovars-row {
     justify-content: center;
   }
-  
-  .hiit-content> .btn-content>.arrivals-btn {
+
+  .hiit-content {
+    text-align: center;
+  }
+
+  .hiit-content>.btn-content {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .hiit-content>.btn-content>.arrivals-btn {
     margin-top: 10px;
   }
 
@@ -854,6 +919,10 @@ header {
   .tovars-row>.arrivals-item>.manufacturer {
     font-size: 12px;
   }
+
+  .explore-content > .title-container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -861,7 +930,7 @@ header {
     margin: 0px 20px;
   }
 
-  .promo-content{
+  .promo-content {
     justify-content: center;
   }
 
@@ -976,6 +1045,10 @@ header {
   .tovars-row>.arrivals-item>.price,
   .tovars-row>.arrivals-item>.colors {
     font-size: 13px;
+  }
+
+  .explore {
+    margin-top: 50px;
   }
 }
 
