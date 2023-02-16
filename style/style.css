@@ -921,6 +921,14 @@ width: 271px;
 
 /* VALUE END */
 
+/* FOOTER START */
+footer{
+  height: 564px;
+  background-color: #383230;
+  ;
+}
+/* FOOTER END */
+
 /* ADAPTIVE START */
 @media (max-width: 1200px) {
   .header-section>ul>li {
