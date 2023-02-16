@@ -863,6 +863,30 @@ header {
 }
 /* ARRIVALS TWO END */
 
+/* LABEL TWO START */
+
+.label-two{
+  background-color: #FEFDFC;
+  height: 458px;
+}
+
+.content-two > .title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #817A70;
+  margin-bottom: 40px;
+}
+
+.content-two > img{
+  margin-top: 70px;
+}
+/* LABEL TWO END */
+
 /* VALUE START */
 .value{
   height: 683px;
@@ -1179,6 +1203,14 @@ footer{
     .value-content > .row > .row-content > img{
       width: 271px;
     }
+  
+  .content-two > img{
+    margin-top: 40px;
+  }
+
+  .content-two > .text{
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1361,6 +1393,17 @@ footer{
 
   .three {
     height: 350px;
+  }
+
+  .label-two{
+    height: 380px;
+  }
+  .content-two > .text{
+    font-size: 18px;
+  }
+
+  .content-two > img{
+    margin-top: 25px;
   }
 }
 
@@ -1570,6 +1613,24 @@ footer{
 
     .value-content > .row > .row-content > img{
       width: 221px;
+    }
+
+    .label-two{
+      height: 300px;
+    }
+
+    .content-two > .title{
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
+
+    .content-two > .text{
+      font-size: 14px;
+    }
+  
+    .content-two > img{
+      margin-top: 15px;
+      width: 180px;
     }
 }
 
