@@ -388,7 +388,7 @@ header {
 }
 
 .arrivals-content>.arrivals-cards>.arrivals-item {
-  width: 287px;
+  width: 280px;
 }
 
 .center {
@@ -1788,11 +1788,15 @@ footer>.container {
   }
 
   .footer-content{
-    height: 310px;
+    height: 340px;
   }
 
   footer{
     height: 400px;
+  }
+
+  footer>.container {
+    padding-top: 60px;
   }
 }
 
